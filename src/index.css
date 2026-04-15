@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-gaming-primary: #ff00ff;
+  --color-gaming-secondary: #00ffff;
+  --color-gaming-accent: #7000ff;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white antialiased selection:bg-gaming-primary selection:text-white;
+    overflow-x: hidden;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
